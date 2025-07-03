@@ -10,7 +10,7 @@ const MyList = ({addMeal, mealPlans, deleteDay, selectedDay, setSelectedDay}) =>
                         onClick={() => setSelectedDay(id)}>
                             <p className="field">{title}</p>
                             <p className="field">{mealForADay.substring(0, 60)}</p>
-                            <button className="button-delete" onClick={() => deleteDay(id)}>Удалить</button>
+                            <button className="button-delete" onClick={() => deleteDay(id)}>Delete</button>
                         </div>
                     ))}
                 </div>
