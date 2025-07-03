@@ -3,7 +3,7 @@ const MyList = ({addMeal, mealPlans, deleteDay, selectedDay, setSelectedDay}) =>
         <div>
             <div>
                 <h1>Идеи еженедельного плана питания</h1>
-                <button className="button-add" onClick={addMeal}>Добавить</button>
+                <button className="button-add" onClick={addMeal}>Add</button>
                 <div>
                     {mealPlans.map(({id, title, mealForADay}) => (
                         <div className={`meal ${id === selectedDay ? 'selected' : 'default'} `}
